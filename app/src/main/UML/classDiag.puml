@@ -1,0 +1,63 @@
+@startuml
+
+class ButtonFragment {
+- upButtonListener()
+- downButtonListener()
+- leftButtonListener()
+- rightButtonListener()
+- resetButtonListener()
+}
+
+class GridFragment {
+ - float mPreviousX
+ - float mPreviousY
+ - {static} int GRIDSIZE
+ - {static} int FOURPROB
+ - {static} int[][] GRID
+ - {static} int filledBlocks
+ - {static} int score
+ - {static} int topScore
+ + onTouchEvent()
+ - updateSharedPreferences()
+ + retrieveSharedPreferences()
+ + {static} resetGame()
+ + {static} getTopScore()
+ + {static} updateTopScore()
+ + {static} getScore()
+ + {static} updateScore()
+ + {static} getFilledBlocks()
+ + {static} updateFilledBlocks()
+ + {static} getGrid()
+ + {static} updateGrid()
+ + {static} moveLeft()
+ + {static} moveRight()
+ + {static} moveUp()
+ + {static} moveDown()
+ + {static} initiateGrid()
+ + {static} onVictory()
+ + {static} onDefeat()
+ - {static} addValue()
+ - {static} animate()
+
+}
+
+class MainActivity {
+sharedPreferences
+onCreate()
+onPause()
++ save()
+}
+
+class ScoreFragment {
++ {static} updateTopScore()
++ {static} updateScore()
+}
+
+abstract class Activity
+
+GridFragment --|> MainActivity
+ButtonFragment --|> MainActivity
+ScoreFragment --|> MainActivity
+MainActivity --|> Activity
+
+@enduml

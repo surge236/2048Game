@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CSSE2048</string>
+    <string name="score">Score: %1$d</string>
+    <string name="top_score">Top Score: %1$d</string>
+    <string name="restart">Restart</string>
+    <string name="block1">%1$s</string>
+    <string name="block2">%1$s</string>
+    <string name="block3">%1$s</string>
+    <string name="block4">%1$s</string>
+    <string name="block5">%1$s</string>
+    <string name="block6">%1$s</string>
+    <string name="block7">%1$s</string>
+    <string name="block8">%1$s</string>
+    <string name="block9">%1$s</string>
+    <string name="block10">%1$s</string>
+    <string name="block11">%1$s</string>
+    <string name="block12">%1$s</string>
+    <string name="block13">%1$s</string>
+    <string name="block14">%1$s</string>
+    <string name="block15">%1$s</string>
+    <string name="block16">%1$s</string>
+    <string name="tempBlock1">%1$s</string>
+    <string name="tempBlock2">%1$s</string>
+</resources>

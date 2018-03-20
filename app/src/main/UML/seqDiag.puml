@@ -1,0 +1,16 @@
+@startuml
+MainActivity -> GridFragment: onCreate()
+MainActivity -> ButtonFragment: onCreate()
+MainActivity -> ScoreFragment: onCreate()
+loop
+loop
+ButtonFragment -> GridFragment: Button Pressed
+GridFragment -> MainActivity: Update View
+GridFragment -> ScoreFragment: Update Scores
+ScoreFragment -> MainActivity: Update View
+end
+GridFragment -> ScoreFragment: Reset Scores
+GridFragment -> MainActivity: Reset Game
+end
+
+@enduml
